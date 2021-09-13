@@ -14,7 +14,7 @@ struct MusicQuestion {
     
     static func getQuestions() -> [MusicQuestion] {
         [
-            MusicQuestion(title: "Guess A",
+            MusicQuestion(title: "Guess A (la)",
                           answers: [
                             Answer(musicNote: .A, answer: true),
                             Answer(musicNote: .B, answer: false),
@@ -37,8 +37,8 @@ struct Answer {
     let answer: Bool
 }
 
-enum MusicNote: Character {
-    case A = "A"
+enum MusicNote: String {
+    case A = "A (la)"
     case B = "B"
     case C = "C"
 }
